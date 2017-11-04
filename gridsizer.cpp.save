@@ -149,7 +149,7 @@ display->AppendText("9");
 
 void GridSizer::onBtSum (wxCommandEvent& WXUNUSED (event)) {
 	string texto = (string)display->GetValue();
-	valor1 = atoi(texto.c_str());
+	valor1 = (texto);
 	cout << valor1 << endl;
 }
 
@@ -157,9 +157,7 @@ void GridSizer::onBtRes (wxCommandEvent& WXUNUSED (event)) {
   int total = valor1 - valor2;
   cout << "Resultado resta " << total << endl;
 }
-void GridSizer::onBtIgual(wxCommandEvent& WXUNUSED (event)) {
 
-}
 BEGIN_EVENT_TABLE(GridSizer, wxFrame)
     EVT_BUTTON(1050,  GridSizer::onCls)
     EVT_BUTTON(1000,  GridSizer::onBt0)
@@ -174,5 +172,4 @@ BEGIN_EVENT_TABLE(GridSizer, wxFrame)
     EVT_BUTTON(1009,  GridSizer::onBt9)
     EVT_BUTTON(1010,  GridSizer::onBtRes)
     EVT_BUTTON(1011,  GridSizer::onBtSum)
-    EVT_BUTTON(1044,  GridSizer::onBtIgual)
 END_EVENT_TABLE()

@@ -24,12 +24,13 @@ public:
   void onBt9 (wxCommandEvent&);
   void onBtSum (wxCommandEvent&);
   void onBtRes (wxCommandEvent&);
-
+  void onBtIgual (wxCommandEvent&);
+  
 private:
   int valor1;
   int valor2;
   string operacion;
   int nClicks;
-  	
+  
   DECLARE_EVENT_TABLE()
 };
